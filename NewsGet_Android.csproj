@@ -1,0 +1,354 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectTypeGuids>{EFBA0AD7-5A72-4C68-AF49-83D382785DCF};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <ProjectGuid>{F9CE96A5-1B93-4E25-AAEB-45152347A04F}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>NewsGet_Android</RootNamespace>
+    <AndroidApplication>True</AndroidApplication>
+    <AndroidResgenFile>Resources\Resource.designer.cs</AndroidResgenFile>
+    <AndroidResgenClass>Resource</AndroidResgenClass>
+    <AndroidManifest>Properties\AndroidManifest.xml</AndroidManifest>
+    <MonoAndroidResourcePrefix>Resources</MonoAndroidResourcePrefix>
+    <MonoAndroidAssetsPrefix>Assets</MonoAndroidAssetsPrefix>
+    <AndroidUseLatestPlatformSdk>False</AndroidUseLatestPlatformSdk>
+    <AssemblyName>NewsGet_Android</AssemblyName>
+    <TargetFrameworkVersion>v6.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <AndroidLinkMode>None</AndroidLinkMode>
+    <JavaMaximumHeapSize>1G</JavaMaximumHeapSize>
+    <RunCodeAnalysis>false</RunCodeAnalysis>
+    <AndroidUseSharedRuntime>True</AndroidUseSharedRuntime>
+    <AndroidLinkSkip />
+    <EmbedAssembliesIntoApk>False</EmbedAssembliesIntoApk>
+    <BundleAssemblies>False</BundleAssemblies>
+    <AndroidCreatePackagePerAbi>False</AndroidCreatePackagePerAbi>
+    <AndroidSupportedAbis>armeabi-v7a,x86,arm64-v8a</AndroidSupportedAbis>
+    <AndroidStoreUncompressedFileExtensions />
+    <MandroidI18n />
+    <Debugger>Xamarin</Debugger>
+    <AndroidEnableMultiDex>False</AndroidEnableMultiDex>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <AndroidUseSharedRuntime>False</AndroidUseSharedRuntime>
+    <RunCodeAnalysis>false</RunCodeAnalysis>
+    <JavaMaximumHeapSize>1G</JavaMaximumHeapSize>
+    <DebugType>full</DebugType>
+    <AndroidLinkMode>SdkOnly</AndroidLinkMode>
+    <EmbedAssembliesIntoApk>True</EmbedAssembliesIntoApk>
+    <BundleAssemblies>False</BundleAssemblies>
+    <AndroidCreatePackagePerAbi>False</AndroidCreatePackagePerAbi>
+    <Debugger>Xamarin</Debugger>
+    <AotAssemblies>False</AotAssemblies>
+    <EnableLLVM>False</EnableLLVM>
+    <AndroidEnableMultiDex>False</AndroidEnableMultiDex>
+    <EnableProguard>False</EnableProguard>
+    <DebugSymbols>False</DebugSymbols>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Java.Interop" />
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="Mono.Android" />
+    <Reference Include="RestSharp">
+      <HintPath>..\packages\RestSharp.105.2.3\lib\MonoAndroid10\RestSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Square.Picasso">
+      <HintPath>..\packages\Square.Picasso.2.5.2.1\lib\MonoAndroid\Square.Picasso.dll</HintPath>
+    </Reference>
+    <Reference Include="Square.OkIO">
+      <HintPath>..\packages\Square.OkIO.1.6.0.0\lib\MonoAndroid\Square.OkIO.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Threading.Tasks">
+      <HintPath>..\packages\Microsoft.Bcl.Async.1.0.168\lib\portable-net45+win8+wpa81\Microsoft.Threading.Tasks.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Threading.Tasks.Extensions">
+      <HintPath>..\packages\Microsoft.Bcl.Async.1.0.168\lib\portable-net45+win8+wpa81\Microsoft.Threading.Tasks.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.Extensions">
+      <HintPath>..\packages\Microsoft.Net.Http.2.2.29\lib\monoandroid\System.Net.Http.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.Primitives">
+      <HintPath>..\packages\Microsoft.Net.Http.2.2.29\lib\monoandroid\System.Net.Http.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http" />
+    <Reference Include="UptimeSharp">
+      <HintPath>..\packages\UptimeSharp.2.1.0.0\lib\portable-win+net45+sl40+wp71\UptimeSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="OneSignal.Android.Binding">
+      <HintPath>..\OneSignal\OneSignal.Android.Binding\OneSignal.Android.Binding\bin\Release\OneSignal.Android.Binding.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.8.0.3\lib\portable-net40+sl5+wp80+win8+wpa81\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Square.OkHttp">
+      <HintPath>..\packages\Square.OkHttp.2.7.5.0\lib\MonoAndroid\Square.OkHttp.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Android.Support.Design, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Xamarin.Android.Support.Design.23.2.1\lib\MonoAndroid43\Xamarin.Android.Support.Design.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Xamarin.Android.Support.v4, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Xamarin.Android.Support.v4.23.2.1\lib\MonoAndroid403\Xamarin.Android.Support.v4.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Xamarin.Android.Support.v7.AppCompat, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Xamarin.Android.Support.v7.AppCompat.23.2.1\lib\MonoAndroid403\Xamarin.Android.Support.v7.AppCompat.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Xamarin.Android.Support.v7.CardView">
+      <HintPath>..\packages\Xamarin.Android.Support.v7.CardView.23.1.1.1\lib\MonoAndroid403\Xamarin.Android.Support.v7.CardView.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Android.Support.v7.RecyclerView, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Xamarin.Android.Support.v7.RecyclerView.23.2.1\lib\MonoAndroid403\Xamarin.Android.Support.v7.RecyclerView.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Xamarin.GooglePlayServices.Basement">
+      <HintPath>..\packages\Xamarin.GooglePlayServices.Basement.27.0.0.0\lib\MonoAndroid41\Xamarin.GooglePlayServices.Basement.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.GooglePlayServices.Base">
+      <HintPath>..\packages\Xamarin.GooglePlayServices.Base.27.0.0.0\lib\MonoAndroid41\Xamarin.GooglePlayServices.Base.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.GooglePlayServices.Gcm">
+      <HintPath>..\packages\Xamarin.GooglePlayServices.Gcm.27.0.0.0\lib\MonoAndroid41\Xamarin.GooglePlayServices.Gcm.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.GooglePlayServices.Maps">
+      <HintPath>..\packages\Xamarin.GooglePlayServices.Maps.27.0.0.0\lib\MonoAndroid41\Xamarin.GooglePlayServices.Maps.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.GooglePlayServices.Location">
+      <HintPath>..\packages\Xamarin.GooglePlayServices.Location.27.0.0.0\lib\MonoAndroid41\Xamarin.GooglePlayServices.Location.dll</HintPath>
+    </Reference>
+    <Reference Include="XamarinItemTouchHelper, Version=1.1.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Xam.Plugins.Android.XamarinItemTouchHelper.1.1.4\lib\MonoAndroid\XamarinItemTouchHelper.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Activities\BsodActivity.cs" />
+    <Compile Include="Resources\Resource.designer.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Activities\BaseActivity.cs" />
+    <Compile Include="Helpers\DatabaseAccess.cs" />
+    <Compile Include="Helpers\RestAccess.cs" />
+    <Compile Include="Models\Db\Setting.cs" />
+    <Compile Include="Models\Article.cs" />
+    <Compile Include="Models\Provider.cs" />
+    <Compile Include="Fragments\SingleNewsFragment.cs" />
+    <Compile Include="Activities\HomeActivity.cs" />
+    <Compile Include="Activities\SwitcherActivity.cs" />
+    <Compile Include="Fragments\ProvidersFragment.cs" />
+    <Compile Include="Helpers\NetworkHelper.cs" />
+    <Compile Include="Helpers\NewsGetApplication.cs" />
+    <Compile Include="Models\ServiceResponse.cs" />
+    <Compile Include="Fragments\LatestNewsFragment.cs" />
+    <Compile Include="Fragments\MostViewedNewsFragment.cs" />
+    <Compile Include="Helpers\OfflineHelper.cs" />
+    <Compile Include="Fragments\FavoriteArticlesFragment.cs" />
+    <Compile Include="Helpers\CacheHelper.cs" />
+    <Compile Include="Helpers\DateHelpers.cs" />
+    <Compile Include="Fragments\SettingsFragment.cs" />
+    <Compile Include="Helpers\CommonHelper.cs" />
+    <Compile Include="Fragments\AboutFragment.cs" />
+    <Compile Include="Activities\SplashActivity.cs" />
+    <Compile Include="Helpers\PushNotificationsHelper.cs" />
+    <Compile Include="Helpers\MarketHelper.cs" />
+    <Compile Include="Helpers\ServerChecker.cs" />
+    <Compile Include="..\OneSignal\SDK\Android\OneSignalAndroid.cs">
+      <Link>OneSignalAndroid.cs</Link>
+    </Compile>
+    <Compile Include="Helpers\IndicatorHelpers.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="Resources\AboutResources.txt" />
+    <None Include="Properties\AndroidManifest.xml" />
+    <None Include="Assets\AboutAssets.txt" />
+    <None Include="packages.config" />
+    <None Include="Info.txt" />
+    <AndroidResource Include="Resources\layout\activity_bsod.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\dialog_changelog.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\nav_view_header.axml" />
+    <AndroidResource Include="Resources\layout\nav_view_menu.axml" />
+    <AndroidResource Include="Resources\values\colors.xml" />
+    <AndroidResource Include="Resources\values\dimens.xml" />
+    <AndroidResource Include="Resources\values\strings.xml" />
+    <AndroidResource Include="Resources\values\styles.xml" />
+    <AndroidResource Include="Resources\values-v21\styles.xml" />
+    <AndroidResource Include="Resources\menu\main.axml" />
+    <AndroidResource Include="Resources\layout\fragment_singlenews.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\values-fa\strings.xml" />
+    <AndroidResource Include="Resources\layout\fragment_latestnews.axml" />
+    <AndroidResource Include="Resources\layout\activity_home.axml" />
+    <AndroidResource Include="Resources\menu\single.axml" />
+    <AndroidResource Include="Resources\drawable-hdpi\ic_menu_white_24dp.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\ic_menu_white_24dp.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_menu_white_24dp.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_menu_white_24dp.png" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\ic_menu_white_24dp.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\ic_home_white_24dp.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\ic_home_white_24dp.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_home_white_24dp.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_home_white_24dp.png" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\ic_home_white_24dp.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\ic_photo_library_white_24dp.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\ic_photo_library_white_24dp.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_photo_library_white_24dp.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_photo_library_white_24dp.png" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\ic_photo_library_white_24dp.png" />
+    <AndroidResource Include="Resources\layout\activity_tabs.axml" />
+    <AndroidResource Include="Resources\layout\activity_switcher.axml" />
+    <AndroidResource Include="Resources\layout\latestnews_recycler_article.axml" />
+    <AndroidResource Include="Resources\layout\fragment_providers.axml" />
+    <AndroidResource Include="Resources\layout\providers_recycler_provider.axml" />
+    <AndroidResource Include="Resources\layout\activity_providermain.axml" />
+    <AndroidResource Include="Resources\drawable-hdpi\ic_arrow_back_white_24dp.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\ic_arrow_back_white_24dp.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_arrow_back_white_24dp.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_arrow_back_white_24dp.png" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\ic_arrow_back_white_24dp.png" />
+    <AndroidResource Include="Resources\drawable-ldrtl-hdpi\ic_arrow_back_white_24dp.png" />
+    <AndroidResource Include="Resources\drawable-ldrtl-mdpi\ic_arrow_back_white_24dp.png" />
+    <AndroidResource Include="Resources\drawable-ldrtl-xhdpi\ic_arrow_back_white_24dp.png" />
+    <AndroidResource Include="Resources\drawable-ldrtl-xxhdpi\ic_arrow_back_white_24dp.png" />
+    <AndroidResource Include="Resources\drawable-ldrtl-xxxhdpi\ic_arrow_back_white_24dp.png" />
+    <AndroidResource Include="Resources\drawable\fail_screen.axml" />
+    <AndroidResource Include="Resources\drawable-hdpi\ic_settings_white_24dp.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\ic_settings_white_24dp.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_settings_white_24dp.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_settings_white_24dp.png" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\ic_settings_white_24dp.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\ic_search_white_24dp.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\ic_search_white_24dp.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_search_white_24dp.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_search_white_24dp.png" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\ic_search_white_24dp.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\ic_format_size_white_24dp.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\ic_format_size_white_24dp.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_format_size_white_24dp.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_format_size_white_24dp.png" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\ic_format_size_white_24dp.png" />
+    <AndroidResource Include="Resources\menu\text_size.axml" />
+    <AndroidResource Include="Resources\drawable-hdpi\ic_favorite_white_24dp.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\ic_favorite_white_24dp.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_favorite_white_24dp.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_favorite_white_24dp.png" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\ic_favorite_white_24dp.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\ic_favorite_border_white_24dp.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\ic_favorite_border_white_24dp.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_favorite_border_white_24dp.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_favorite_border_white_24dp.png" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\ic_favorite_border_white_24dp.png" />
+    <AndroidResource Include="Resources\layout\fragment_mostviewednews.axml" />
+    <AndroidResource Include="Resources\layout\nav_view_imageswitch.axml" />
+    <AndroidResource Include="Resources\layout\nav_view_offlinearticlesswitch.axml" />
+    <AndroidResource Include="Resources\drawable-hdpi\ic_save_white_24dp.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\ic_save_white_24dp.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_save_white_24dp.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_save_white_24dp.png" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\ic_save_white_24dp.png" />
+    <AndroidResource Include="Resources\values-land\dimens.xml" />
+    <AndroidResource Include="Resources\layout\fragment_favoritearticles.axml" />
+    <AndroidResource Include="Resources\layout\fragment_latestnews_provider.axml" />
+    <AndroidResource Include="Resources\drawable-hdpi\ic_whatshot_white_24dp.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\ic_whatshot_black_24dp.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\ic_whatshot_black_24dp.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_whatshot_black_24dp.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_whatshot_black_24dp.png" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\ic_whatshot_black_24dp.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\ic_favorite_black_24dp.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\ic_favorite_black_24dp.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_favorite_black_24dp.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_favorite_black_24dp.png" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\ic_favorite_black_24dp.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\ic_share_white_24dp.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\ic_share_white_24dp.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_share_white_24dp.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_share_white_24dp.png" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\ic_share_white_24dp.png" />
+    <AndroidResource Include="Resources\drawable\alert.png" />
+    <AndroidResource Include="Resources\layout\fragment_settings.axml" />
+    <AndroidResource Include="Resources\drawable\nav_view_item_textcolor.axml" />
+    <AndroidResource Include="Resources\drawable-hdpi\ic_info_white_24dp.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\ic_info_white_24dp.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_info_white_24dp.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_info_white_24dp.png" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\ic_info_white_24dp.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\ic_bug_report_white_24dp.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\ic_bug_report_white_24dp.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_bug_report_white_24dp.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_bug_report_white_24dp.png" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\ic_bug_report_white_24dp.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\ic_school_white_24dp.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\ic_school_white_24dp.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_school_white_24dp.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_school_white_24dp.png" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\ic_school_white_24dp.png" />
+    <AndroidResource Include="Resources\layout\fragment_about.axml" />
+    <AndroidResource Include="Resources\drawable-hdpi\ic_bug_report_black_24dp.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\ic_bug_report_black_24dp.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_bug_report_black_24dp.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_bug_report_black_24dp.png" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\ic_bug_report_black_24dp.png" />
+    <AndroidResource Include="Resources\layout\activity_splash.axml" />
+    <AndroidResource Include="Resources\mipmap-hdpi\ic_launcher.png" />
+    <AndroidResource Include="Resources\mipmap-mdpi\ic_launcher.png" />
+    <AndroidResource Include="Resources\mipmap-xhdpi\ic_launcher.png" />
+    <AndroidResource Include="Resources\mipmap-xxhdpi\ic_launcher.png" />
+    <AndroidResource Include="Resources\mipmap-xxxhdpi\ic_launcher.png" />
+    <AndroidResource Include="Resources\drawable\_back_newsget_logo.png" />
+    <AndroidResource Include="Resources\drawable\newsget_logo.png" />
+    <AndroidResource Include="Resources\drawable-hdpi-v11\ic_stat_onesignal_default.png" />
+    <AndroidResource Include="Resources\drawable-mdpi-v11\ic_stat_onesignal_default.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi-v11\ic_stat_onesignal_default.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi-v11\ic_stat_onesignal_default.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi-v11\ic_onesignal_large_icon_default.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\ic_update_white_24dp.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\ic_update_white_24dp.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_update_white_24dp.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_update_white_24dp.png" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\ic_update_white_24dp.png" />
+    <AndroidResource Include="Resources\menu\latest_provider.axml" />
+    <AndroidResource Include="Resources\drawable-hdpi\ic_public_white_24dp.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\ic_public_white_24dp.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_public_white_24dp.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_public_white_24dp.png" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\ic_public_white_24dp.png" />
+  </ItemGroup>
+  <Import Project="..\OneSignal\SDK\Common\Com.OneSignal\Com.OneSignal\Com.OneSignal.projitems" Label="Shared" Condition="Exists('..\OneSignal\SDK\Common\Com.OneSignal\Com.OneSignal\Com.OneSignal.projitems')" />
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
+  <Import Project="..\packages\Microsoft.Bcl.Build.1.0.21\build\Microsoft.Bcl.Build.targets" Condition="Exists('..\packages\Microsoft.Bcl.Build.1.0.21\build\Microsoft.Bcl.Build.targets')" />
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\bsod.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\newsget50changelog_fa.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\newsget50changelog_en.txt" />
+  </ItemGroup>
+</Project>

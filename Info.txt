@@ -1,0 +1,30 @@
+﻿- Getting application level context:
+
+Android.App.Application.Context;
+
+
+v 2.1 changlog:
+
+- Now fully compatible with Android 6.0 Marshmallow
+- Removed unnecessary permissions
+- Updated "Retry" button
+- Updated share dialog
+- Bug fixes
+
+
+v 2.0 changlog:
+
+done:
+
+*- overal style changes
+*- smart server management - no more downtimes!
+*- added the ability to copy an articles url in clipboard
+*- fixed a possible bug where language could randomly change
+*- added better update notifications
+*- set the maximum height of cards image
+*- added a link to visit the providers website
+*- prevent from sleep (keep screen on option added to settings)
+/- refresh settings after silent server change (not tested)
+*- fixed a bug that could cause a crash at startup
+*- added a toast for client and server info when clicking on newsget icon on nav drawer
+*- added a dialog for rating the app

@@ -1,0 +1,109 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="newsget_home">newsget.in</string>
+  <string name="dev_home">atvsg.com</string>
+	<string name="newsget_manual">http://newsget.in/android/manual</string>
+	<string name="author_email">atvsg24@gmail.com</string>
+
+	<string-array name="lang_listNames">
+		<item>English</item>
+		<item>Persian</item>
+	</string-array>
+	<string-array name="lang_listValues">
+	    <item>en</item>
+	    <item>fa</item>
+	</string-array>
+
+	<string-array name="sv_listNames">
+		<item>Server 1</item>
+		<item>Server 2</item>
+	</string-array>
+	<string-array name="sv_listValues">
+	    <item>server1</item>
+	    <item>server2</item>
+	</string-array>
+
+	<string name="app_name">NewsGet</string>
+	<string name="app_name_eng">NewsGet</string>
+	<string name="app_author">Vahid Amiri Motlagh - atVSG.com</string>
+	<string name="loading">Loading</string>
+	<string name="browse">Browse</string>
+	<string name="refresh">Refresh</string>
+	<string name="images">Images</string>
+	<string name="latest">Latest</string>
+	<string name="sites">Sites</string>
+	<string name="hot">Hot</string>
+	<string name="no_connection">No connection</string>
+	<string name="retryU">RETRY</string>
+	<string name="try_again">Try Again</string>
+	<string name="home">Home</string>
+	<string name="settings">Settings</string>
+	<string name="text_size">Text size</string>
+	<string name="text_size_larger">Larger</string>
+	<string name="text_size_smaller">Smaller</string>
+	<string name="loading_failed">Loading was not succesful</string>
+	<string name="action_failed">Action failed</string>
+	<string name="added_to_favorites">Added to favorites</string>
+	<string name="add_to_favorites">Add to favorites</string>
+	<string name="remove_from_favorites">Remove from favorites</string>
+	<string name="save_viewed_articles">Save Articles</string>
+	<string name="favorites">Favorites</string>
+	<string name="latest_articles_from">Latest articles from</string>
+	<string name="removed_from_favorites">Removed from favorites</string>
+	<string name="undo">Undo</string>
+	<string name="share">Share</string>
+	<string name="all_favorite_articles">All favorite articles: (Swipe to delete)</string>
+	<string name="sharedby">Shared by NewsGet app</string>
+	<string name="something_wrong_reading_article">Something went wrong when reading article</string>
+	<string name="changes_rerun">To see changes please exit and re-run the app</string>
+	<string name="settings">Settings</string>
+	<string name="settings_show_day_of_week">Show day of the week</string>
+	<string name="settings_show_day_of_week_sum">If selected, day of the week will be shown next to the todays date in the navigation drawer.</string>
+	<string name="new_version_available">New Version Available!</string>
+	<string name="new_version_available_desc">Touch to update to latest version now!</string>
+	<string name="delete_saved_articles">Delete saved articles</string>
+	<string name="delete_saved_articles_sum">Delete all saved articles on the device that are used for offline usage.</string>
+	<string name="delete_saved_articles_q">Delete saved articles?</string>
+	<string name="delete">Delete</string>
+	<string name="cancel">Cancel</string>
+	<string name="manual">Manual</string>
+	<string name="bug_report">Bug Report</string>
+	<string name="about">About</string>
+	<string name="designed_developed">Designed and developed by</string>
+	<string name="disclaimer">NewsGet or its developers are not responsible for the content of news.</string>
+	<string name="version">Version:</string>
+	<string name="email">Email:</string>
+  <string name="app_website">App\'s Website:</string>
+  <string name="dev_website">Developer\'s Website:</string>
+	<string name="report_title">Report bugs or other issues</string>
+	<string name="language">Language</string>
+	<string name="language_sum">Change the apps language</string>
+	<string name="stilltrying">Still trying...</string>
+	<string name="server">Server</string>
+	<string name="server_sum">Switch to another server if retrieving articles take a long time or fail.</string>
+	<string name="market">Market:</string>
+	<string name="copyurl">Copy the URL</string>
+	<string name="copyurl_toast">URL was copied into memory</string>
+	<string name="source_website">Source website</string>
+	<string name="settings_keep_the_screen_on">Keep the screen on</string>
+	<string name="settings_keep_the_screen_on_sum">If selected, screen will be kept on, in all pages except home.</string>
+	<string name="warning">Warning</string>
+	<string name="push_notif_failed">Push notifications service failed to initialize, please report this error using "Bug Report" option.</string>
+	<string name="close">Close</string>
+	<string name="rate_newsget">Rate NewsGet</string>
+	<string name="rate_sum">NewsGet is a completely free app, we know that you don\'t like advertisments and therefore we don\'t show them. Please support us with your 5 star rates!</string>
+	<string name="rate_now">Rate it\nnow</string>
+	<string name="remind_later">Remind\nlater</string>
+	<string name="no_thanks">No,\nthanks</string>
+	<string name="pls_wait">Please wait...</string>
+	<string name="problem_starting_market">Something happened. Please search for NewsGet on your preferred market manually.</string>
+	<string name="error">Error</string>
+  <string name="investigating_the_server">Investigating the server...</string>
+  <string name="investigating_the_issue">Investigating the issue...</string>
+  <string name="settings_load_original_url_when_trouble">Load original url when NewsGet fails</string>
+  <string name="settings_load_original_url_when_trouble_sum">If selected, the original url from the source website will be loaded in case of NewsGet server issues</string>
+  <string name="open_in_browser">Open in browser</string>
+  <string name="beta_version">Beta Version</string>
+  <string name="newsget_changelog">NewsGet changelog</string>
+  <string name="newsget_3_0_changelog">Thanks for installing NewsGet 3.0, this release includes many improvements and bugfixes.</string>
+</resources>

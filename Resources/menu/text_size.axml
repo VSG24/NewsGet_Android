@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	app:theme="@style/MyTheme.RightMenu">
+    <item
+        android:id="@+id/action_textsize_larger"
+        android:orderInCategory="100"
+        android:title="@string/text_size_larger" />
+    <item
+	    android:id="@+id/action_textsize_smaller"
+	    android:orderInCategory="100"
+	    android:title="@string/text_size_smaller" />
+</menu>

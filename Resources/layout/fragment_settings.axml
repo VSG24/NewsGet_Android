@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <ListPreference
+        android:id="@+id/preferenceScreen"
+        android:title="@string/language"
+        android:summary="@string/language_sum"
+        android:key="appLanguage"
+        android:defaultValue="fa"
+        android:entries="@array/lang_listNames"
+        android:entryValues="@array/lang_listValues" />
+    <ListPreference
+        android:title="@string/server"
+        android:summary="@string/server_sum"
+        android:key="appServer"
+        android:defaultValue="server1"
+        android:entries="@array/sv_listNames"
+        android:entryValues="@array/sv_listValues" />
+    <CheckBoxPreference
+        android:title="@string/settings_show_day_of_week"
+        android:defaultValue="true"
+        android:summary="@string/settings_show_day_of_week_sum"
+        android:key="dayOfTheWeek" />
+    <CheckBoxPreference
+        android:title="@string/settings_keep_the_screen_on"
+        android:defaultValue="true"
+        android:summary="@string/settings_keep_the_screen_on_sum"
+        android:key="keepScreenOn" />
+    <CheckBoxPreference
+        android:title="@string/settings_load_original_url_when_trouble"
+        android:defaultValue="true"
+        android:summary="@string/settings_load_original_url_when_trouble_sum"
+        android:key="loadOriginalUrlOnWebView" />
+    <Preference
+        android:title="@string/delete_saved_articles"
+        android:summary="@string/delete_saved_articles_sum"
+        android:key="deleteSavedArticles" />
+</PreferenceScreen>

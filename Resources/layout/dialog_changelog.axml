@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="right"
+    android:textDirection="rtl"
+    android:orientation="vertical" >
+    <!--<TextView
+        android:id="@+id/changelog_text"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_margin="20dp"/>
+    <ListView
+        android:id="@+id/changelog_list"
+        android:layout_width="wrap_content"
+        android:textDirection="rtl"
+        android:layout_height="match_parent" />-->
+    <android.webkit.WebView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/webview_changelog_dialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>

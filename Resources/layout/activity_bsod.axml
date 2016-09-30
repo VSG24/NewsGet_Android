@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+      <LinearLayout
+          android:orientation="horizontal"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:background="@drawable/bsod" >
+        <!--<ImageView
+            android:id="@+id/bsod_image"
+            android:src="@drawable/bsod"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:layout_centerHorizontal="true" />-->
+        <ImageView
+            android:id="@+id/bsod_image"
+            android:src="@drawable/bsod"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:visibility="gone" />
+      </LinearLayout>
+      <View
+          android:id="@+id/bsod_activity"
+          android:layout_width="fill_parent"
+          android:layout_height="fill_parent" />
+</FrameLayout>

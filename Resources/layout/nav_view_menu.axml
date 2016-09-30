@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_view_menu">
+    <group>
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home_white_24dp"
+            android:title="@string/home" />
+        <item
+            android:id="@+id/nav_favorites"
+            android:icon="@drawable/ic_favorite_white_24dp"
+            android:title="@string/favorites" />
+        <group
+            android:id="@+id/grp_switch"
+            android:checkableBehavior="single">
+            <item
+                android:id="@+id/image_switch_parent"
+                android:icon="@drawable/ic_photo_library_white_24dp"
+                android:title="@string/images"
+                app:actionLayout="@layout/nav_view_imageswitch"
+                app:showAsAction="always" />
+            <item
+                android:id="@+id/offlinesave_switch_parent"
+                android:icon="@drawable/ic_save_white_24dp"
+                android:title="@string/save_viewed_articles"
+                app:actionLayout="@layout/nav_view_offlinearticlesswitch"
+                app:showAsAction="always" />
+        </group>
+        <item
+            android:id="@+id/nav_settings"
+            android:icon="@drawable/ic_settings_white_24dp"
+            android:title="@string/settings" />
+        <item
+            android:id="@+id/nav_about"
+            android:icon="@drawable/ic_info_white_24dp"
+            android:title="@string/about" />
+    </group>
+</menu>

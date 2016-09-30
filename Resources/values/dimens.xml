@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<resources>
+  <dimen name="drawer_width">240dp</dimen>
+  <dimen name="title_margin_top_bottom">7dp</dimen>
+  <dimen name="title_margin_left_right">6dp</dimen>
+  <dimen name="title_padding">5dp</dimen>
+  <dimen name="nav_padding_start">20dp</dimen>
+  <dimen name="progressB_top_margin">195dp</dimen>
+  <dimen name="progressB_top_margin_notab">240dp</dimen>
+  <dimen name="about_logo_top_margin">100dp</dimen>
+  <dimen name="cardview_text_size">16sp</dimen>
+</resources>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:src="@drawable/newsget_logo"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:id="@+id/app_logo"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/about_logo_top_margin" />
+        <TextView
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/designed_developed"
+            android:layout_margin="20dp" />
+        <TextView
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/disclaimer"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="15dp" />
+        <TextView
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/email"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:autoLink="email" />
+        <TextView
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/app_website"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:autoLink="web" />
+        <TextView
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/app_ver"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:paddingBottom="20dp" />
+        <TextView
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/dev_website"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:autoLink="web" />
+        <TextView
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/app_market"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:paddingBottom="20dp" />
+    </LinearLayout>
+</ScrollView>

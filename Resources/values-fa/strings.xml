@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<resources>
+
+	<string-array name="lang_listNames">
+		<item>انگلیسی</item>
+		<item>فارسی</item>
+	</string-array>
+	<string-array name="lang_listValues">
+	    <item>en</item>
+	    <item>fa</item>
+	</string-array>
+
+	<string-array name="sv_listNames">
+		<item>سرور 1</item>
+		<item>سرور 2</item>
+	</string-array>
+	<string-array name="sv_listValues">
+	    <item>server1</item>
+	    <item>server2</item>
+	</string-array>
+
+	<string name="app_name">نیوز گت</string>
+	<string name="app_author">وحید امیری مطلق - atVSG.com</string>
+	<string name="loading">در حال بارگذاری</string>
+	<string name="browse">مرور</string>
+	<string name="refresh">تازه سازی</string>
+	<string name="images">تصاویر</string>
+	<string name="latest">جدیدترین ها</string>
+	<string name="sites">سایت ها</string>
+	<string name="hot">داغ</string>
+	<string name="no_connection">اتصال برقرار نیست</string>
+	<string name="retryU">تلاش مجدد</string>
+	<string name="try_again">تلاش دوباره</string>
+	<string name="home">خانه</string>
+	<string name="settings">تنظیمات</string>
+	<string name="text_size">سایز متن</string>
+	<string name="text_size_larger">بزرگتر</string>
+	<string name="text_size_smaller">کوچکتر</string>
+	<string name="loading_failed">بارگذاری موفقیت آمیز نبود</string>
+	<string name="action_failed">عملیات ناموفق بود</string>
+	<string name="added_to_favorites">اضافه شد به علاقه مندی ها</string>
+	<string name="add_to_favorites">اضافه کردن به علاقه مندی ها</string>
+	<string name="remove_from_favorites">حذف کردن از علاقه مندی ها</string>
+	<string name="save_viewed_articles">ذخیره ی مطالب</string>
+	<string name="favorites">علاقه مندی ها</string>
+	<string name="latest_articles_from">آخرین مطالب از</string>
+	<string name="removed_from_favorites">از علاقه مندی ها حذف شد</string>
+	<string name="undo">لغو</string>
+	<string name="share">به اشتراک گذاری</string>
+	<string name="all_favorite_articles">تمام مطالب مورد علاقه (بکشید تا حذف شود)</string>
+	<string name="sharedby">ارسال شده توسط نرم افزار نیوزگت</string>
+	<string name="something_wrong_reading_article">در هنگام خواندن مطلب مشکلی به وجود آمد</string>
+	<string name="changes_rerun">برای مشاهده ی تغیرات از برنامه خارج و دوباره اجرا کنید</string>
+	<string name="settings">تنظیمات</string>
+	<string name="settings_show_day_of_week">نمایش روز در هفته</string>
+	<string name="settings_show_day_of_week_sum">در صورتی که انتخاب شده باشد، نام روز در هفته در منوی پیمایش اضافه میشود.</string>
+	<string name="new_version_available">نسخه ی جدید موجود است!</string>
+	<string name="new_version_available_desc">برای آپدیت به آخرین نسخه لمس کنید!</string>
+	<string name="delete_saved_articles">حذف مطالب ذخیره شده</string>
+	<string name="delete_saved_articles_sum">حذف همه ی مطالب ذخیره شده روی دستگاه که برای مطالعه در حالت آفلاین استفاده می شوند.</string>
+	<string name="delete_saved_articles_q">حذف فایل های آفلاین؟</string>
+	<string name="delete">حذف</string>
+	<string name="cancel">انصراف</string>
+	<string name="manual">راهنما</string>
+	<string name="bug_report">گزارش باگ</string>
+	<string name="about">درباره</string>
+	<string name="designed_developed">طراحی و توسعه توسط</string>
+	<string name="disclaimer">نیوزگت مسئولیتی در قبال محتوای اخبار ندارد.</string>
+	<string name="version">نسخه:</string>
+	<string name="email">ایمیل:</string>
+	<string name="app_website">وب سایت برنامه:</string>
+  <string name="dev_website">وب سایت توسعه دهنده:</string>
+	<string name="report_title">گزارش باگ ها یا مشکلات دیگر</string>
+	<string name="language">زبان</string>
+	<string name="language_sum">تغییر زبان برنامه</string>
+	<string name="stilltrying">در حال تلاش...</string>
+	<string name="server">سرور</string>
+	<string name="server_sum">در صورتی که دریافت مقالات طول میکشد یا شکست میخورد، از یک سرور دیگر استفاده کنید.</string>
+	<string name="market">مارکت:</string>
+	<string name="copyurl">کپی آدرس اینترنتی</string>
+	<string name="copyurl_toast">آدرس اینترنتی در حافظه کپی شد</string>
+	<string name="source_website">وب سایت منبع</string>
+	<string name="settings_keep_the_screen_on">روشن نگه داشتن صفحه</string>
+	<string name="settings_keep_the_screen_on_sum">در صورتی که انتخاب شده باشد، صفحه ی دستگاه در صفحات غیر از خانه به خواب نمی رود و روشن می ماند.</string>
+	<string name="warning">هشدار</string>
+	<string name="push_notif_failed">راه اندازی سرویس اعلان ها با شکست مواجه شد، لطفا این مشکل را از طریق قسمت "گزارش باگ" گزارش کنید.</string>
+	<string name="close">بستن</string>
+	<string name="rate_newsget">امتیاز به نیوزگت</string>
+	<string name="rate_sum">نیوزگت یک برنامه کاملا رایگان است، ما می دانیم که شما تبلیغات را دوست ندارید و در نتیجه ما آنها را نشان نمی دهیم. لطفا با امتیاز 5 ستاره خود از ما حمایت کنید!</string>
+	<string name="rate_now">حالا\nامتیاز بده</string>
+	<string name="remind_later">بعدا\nیادآوری کن</string>
+	<string name="no_thanks">نه،\nممنون</string>
+	<string name="pls_wait">لطفا صبر کنید...</string>
+	<string name="problem_starting_market">مشکلی پیش آمد. لطفا خودتان در مارکت مورد نظر برای NewsGet جستجو کنید.</string>
+	<string name="error">خطا</string>
+  <string name="investigating_the_server">در حال بررسی سرور...</string>
+  <string name="investigating_the_issue">در حال بررسی مشکل...</string>
+  <string name="settings_load_original_url_when_trouble">بارگذاری سایت منبع هنگام خطای نیوزگت</string>
+  <string name="settings_load_original_url_when_trouble_sum">در صورتی که انتخاب شده باشد، به هنگام خطا در دریافت اطلاعات از سرور های نیوزگت، آدرس سایت اصلی بارگذاری می شود.</string>
+  <string name="open_in_browser">باز کردن در مروگر</string>
+  <string name="beta_version">نسخه آزمایشی</string>
+  <string name="newsget_changelog">تغییرات نیوزگت</string>
+  <string name="newsget_3_0_changelog">متشکریم که نیوزگت 3 را نصب کردید. این نسخه داری بهبود های فراوان و رفع مشکلات آزار دهنده است.</string>
+</resources>

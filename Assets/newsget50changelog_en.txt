@@ -1,0 +1,13 @@
+﻿<html dir="ltr">
+	<p style="padding: 10px; font-weight: bold;">
+	Thank you for installing NewsGet 3.0.0, this release includes many improvements and bugfixes.
+	</p>
+	<ul>
+		<li>Faster app start-up</li>
+		<li>Less RAM consumption</li>
+		<li>Caching images in lists</li>
+		<li>Fixed a crash when loading a single</li>
+		<li>Loading the original site url when NewsGet is in trouble</li>
+		<li>Added an option to open original article in external browser</li>
+	</ul>
+</html>
